@@ -1,0 +1,10 @@
+# =============================================================================
+# Aliases
+# =============================================================================
+
+alias vim=nvim
+alias ls=eza
+
+alias repositories="cd ~/Developer/Repositories"
+alias dumpster="cd ~/Developer/Dumpster"
+alias vaults="cd ~/Documents/Vaults"

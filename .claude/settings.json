@@ -1,0 +1,8 @@
+{
+  "includeCoAuthoredBy": false,
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y @owloops/claude-powerline@latest --style=powerline --theme=custom"
+  },
+  "alwaysThinkingEnabled": true
+}
