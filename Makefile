@@ -98,15 +98,17 @@ brew:
 link:
 	@mkdir -p $(HOME)/.config $(HOME)/.claude
 	@printf "$(CYAN)→$(RESET) Creating symlinks...\n"
-	@for pair in $(LINKS); do \
+	@ts=$$(date +%Y%m%d_%H%M%S); \
+	for pair in $(LINKS); do \
 		src="$(DOTFILES)/$${pair%%:*}"; \
 		dst="$${pair##*:}"; \
 		mkdir -p "$$(dirname "$$dst")"; \
 		if [ -L "$$dst" ] && [ "$$(readlink "$$dst")" = "$$src" ]; then \
 			printf "  $(GREEN)✓$(RESET) $$dst $(CYAN)(already linked)$(RESET)\n"; \
 		elif [ -e "$$dst" ] || [ -L "$$dst" ]; then \
-			printf "  $(YELLOW)~$(RESET) $$dst.bak (backed up)\n"; \
-			mv "$$dst" "$$dst.bak"; \
+			bak="$$dst.bak.$$ts"; \
+			mv "$$dst" "$$bak"; \
+			printf "  $(YELLOW)~$(RESET) backed up → $$(basename $$bak)\n"; \
 			ln -sf "$$src" "$$dst"; \
 			printf "  $(GREEN)✓$(RESET) $$dst\n"; \
 		else \
