@@ -2,9 +2,13 @@
 # Aliases
 # =============================================================================
 
-alias vim=nvim
-alias ls=eza
+alias ".."="cd .."
+alias re-source="source ~/.zshrc"
 
+alias ls="eza -la"
+alias ll="eza -laGT"
+
+alias infra="cd ~/Developer/Infrastructure/"
 alias repositories="cd ~/Developer/Repositories"
 alias dumpster="cd ~/Developer/Dumpster"
 alias vaults="cd ~/Documents/Vaults"
