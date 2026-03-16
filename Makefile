@@ -5,7 +5,7 @@ DOTFILES := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 
 # ── Homebrew dependencies ──────────────────────────────────────────────────
 FORMULAE := neovim tmux starship atuin zoxide eza fzf ripgrep fd node pre-commit
-CASKS    := aerospace ghostty
+CASKS    := aerospace ghostty font-fantasque-sans-mono-nerd-font
 
 # ── Symlink map: "repo_path:home_path" ────────────────────────────────────
 # Each entry is split on the first colon: left = repo-relative, right = $HOME target
@@ -46,7 +46,7 @@ define link_file
 	fi
 endef
 
-.PHONY: help install brew link tpm update unlink status
+.PHONY: help install brew link tpm iterm update unlink status
 
 # ── Targets ─────────────────────────────────────────────────────────────────
 
@@ -61,8 +61,8 @@ help:
 	@printf "\n$(CYAN)Keep repo in sync with live edits:$(RESET)\n"
 	@printf "  make update && git diff\n"
 
-## install       Full setup: brew + link + tpm + pre-commit hooks
-install: brew link tpm
+## install       Full setup: brew + link + tpm + iterm + pre-commit hooks
+install: brew link tpm iterm
 	@pre-commit install --install-hooks
 	@printf "\n$(GREEN)$(BOLD)✓ Install complete$(RESET)\n"
 	@printf "$(YELLOW)→$(RESET) Open a new shell to apply zsh changes\n"
@@ -126,6 +126,20 @@ tpm:
 		git clone --depth=1 https://github.com/tmux-plugins/tpm \
 			"$(HOME)/.config/tmux/plugins/tpm"; \
 		printf "$(GREEN)✓$(RESET) TPM installed\n"; \
+	fi
+
+## iterm         Import Catppuccin Mocha color preset into iTerm2
+iterm:
+	@PRESET="$(DOTFILES)/.config/iterm/catppuccin-mocha.itermcolors"; \
+	DEST="$(HOME)/Library/Application Support/iTerm2/DynamicProfiles"; \
+	PREFS="$(HOME)/Library/Preferences/com.googlecode.iterm2.plist"; \
+	if /usr/libexec/PlistBuddy -c "Print :'Custom Color Presets':'Catppuccin Mocha'" "$$PREFS" &>/dev/null 2>&1; then \
+		printf "$(GREEN)✓$(RESET) Catppuccin Mocha already installed in iTerm2\n"; \
+	elif ! pgrep -x iTerm2 &>/dev/null && [ ! -d "/Applications/iTerm.app" ]; then \
+		printf "$(YELLOW)–$(RESET) iTerm2 not found, skipping\n"; \
+	else \
+		open "$$PRESET"; \
+		printf "$(GREEN)✓$(RESET) Catppuccin Mocha preset opened — click $(BOLD)OK$(RESET) in iTerm2 to import\n"; \
 	fi
 
 ## update        Copy live $$HOME config back into repo (for edits made outside repo)
