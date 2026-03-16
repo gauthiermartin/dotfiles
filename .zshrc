@@ -113,7 +113,7 @@ fi
 
 
 # =============================================================================
-# Aliases 
+# Aliases
 # =============================================================================
 ZSH_ALIASES="${HOME}/.zsh_aliases"
 
@@ -122,4 +122,3 @@ if [ -f ${ZSH_ALIASES} ]; then
 else
     echo "Aliases file ${ZSH_ALIASES} not found ... skipping loading"
 fi
-
