@@ -1,0 +1,4 @@
+font-size = 16
+theme = catppuccin-mocha.conf
+background-opacity = 0.85
+background-blur = 10
