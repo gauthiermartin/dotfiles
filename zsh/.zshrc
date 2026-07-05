@@ -81,7 +81,7 @@ fi
 # Environment
 # =============================================================================
 
-export EDITOR=vim
+export EDITOR=nvim
 export ENABLE_LSP_TOOLS=1
 export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
 export CLAUDE_CODE_DISABLE_AUTO_MEMORY=1
@@ -104,13 +104,6 @@ fi
 if command -v starship &>/dev/null; then
   eval "$(starship init zsh)"
 fi
-
-# =============================================================================
-# Local overrides
-# =============================================================================
-
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-
 
 # =============================================================================
 # Aliases 
