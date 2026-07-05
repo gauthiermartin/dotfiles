@@ -1,0 +1,28 @@
+[init]
+  defaultBranch = main
+[push]
+  default = current
+[color]
+  ui = auto
+[alias]
+  aa = add --all
+  ap = add --patch
+  co = checkout
+  st = status
+[core]
+  autocrlf = input
+	pager = hunk pager
+[merge]
+  ff = only
+[commit]
+	gpgsign = true
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
+[diff]
+  colorMoved = zebra
+[user]
+  name = Martin Gauthier
+  email = gauthiermartin86@gmail.com
+	signingkey = 9B605281421F58FF
