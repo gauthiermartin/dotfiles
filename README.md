@@ -58,6 +58,24 @@ To re-stow (useful after adding new files to a package):
 stow -R <package>
 ```
 
+## Makefile
+
+A `Makefile` wraps the common cases:
+
+```sh
+make stow     # stow every package (fresh laptop import)
+make unstow   # unstow every package (remove all configs)
+make restow   # restow every package (stow -R)
+make sync     # stow only packages not yet stowed (new pkg dir / git pull)
+make list     # list detected packages
+make help     # show usage (default target)
+```
+
+`make sync` is for the case where a new package directory shows up (either
+you just created one, or `git pull` brought one in from another machine) but
+hasn't been linked into `$HOME` yet — it stows only what's missing, leaving
+already-stowed packages untouched.
+
 ## Adding a new package
 
 Create a directory named after the tool, and inside it recreate the path the
