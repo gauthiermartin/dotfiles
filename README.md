@@ -13,6 +13,7 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 | `eza`      | `~/.config/eza/theme.yml`                    |
 | `ghostty`  | `~/.config/ghostty/config` (+ themes)        |
 | `git`      | `~/.gitconfig`                               |
+| `herdr`    | `~/.config/herdr/config.toml`                |
 | `hunk`     | `~/.config/hunk/config.toml`                 |
 | `nvim`     | `~/.config/nvim` (LazyVim-based config)      |
 | `starship` | `~/.config/starship.toml`                    |
