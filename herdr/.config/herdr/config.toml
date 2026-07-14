@@ -7,17 +7,16 @@ auto_switch = false
 [keys]
 prefix = "ctrl+a"
 
-settings = "prefix+g"
+settings = "prefix+s"
 workspace_picker = "prefix+w"
-goto = "prefix+s"
+goto = "prefix+g"
 
 navigate_workspace_down = "j"
 navigate_workspace_up = "k"
 
-next_workspace = "prefix+j"
-previous_workspace = "prefix+k"
+next_workspace = "prefix+shift+n"
+previous_workspace = "prefix+shift+p"
 
-# Vim-style pane focus — direct chords, matches tmux C-h/j/k/l (no prefix)
 navigate_pane_left = ""
 navigate_pane_down = ""
 navigate_pane_up = ""
@@ -28,30 +27,27 @@ focus_pane_down = "ctrl+j"
 focus_pane_up = "ctrl+k"
 focus_pane_right = "ctrl+l"
 
-# Splits — tmux split-mode: v = left/right, h = top/bottom, x = delete pane
-# (herdr has no w-> submode; these are direct, w stays the workspace picker)
 split_vertical = "prefix+v"
 split_horizontal = "prefix+h"
-close_pane = "prefix+x"
 
-# Tabs ~ tmux windows
-new_tab = "prefix+c"         # tmux: c new-window
+close_pane = "prefix+x"
+close_tab = "prefix+shift+x"
+close_workspace = "prefix+ctrl+shift+x"
+
+rename_pane = "prefix+r"
+rename_tab = "prefix+shift+r"
+rename_workspace = "prefix+ctrl+shift+r"
+
+new_tab = "prefix+c"
 next_tab = "prefix+n"
 previous_tab = "prefix+p"
-close_tab = "prefix+shift+x" # tmux: X kill-window
-rename_tab = "prefix+comma"  # tmux: r -> w rename-window
 
-# Workspaces ~ tmux sessions
-new_workspace = "prefix+shift+c"  # tmux: C new-session
-close_workspace = "prefix+q"      # tmux: q kill-session (confirm_close on)
-rename_workspace = "prefix+colon" # tmux: r -> s rename-session
-rename_pane = "prefix+semicolon"
+new_workspace = "prefix+shift+c"
 
-# Session / pane control
-detach = "prefix+d"             # tmux: d detach-client
-zoom = "prefix+enter"           # tmux: z zoom-pane
-copy_mode = "prefix+y"          # tmux: [ enters copy-mode
-resize_mode = "prefix+shift+r"  # moved off r (rename took it)
+detach = "prefix+d"
+zoom = "prefix+enter"
+copy_mode = "prefix+y"
+resize_mode = "prefix+z"
 reload_config = "prefix+ctrl+r"
 
 
