@@ -5,10 +5,11 @@
 alias ".."="cd .."
 alias re-source="source ~/.zshrc"
 
-alias dotfiles="cd ~/.dotfiles"
-
 alias ls="eza -la"
 alias ll="eza -laGT"
 
+alias dotfiles="cd ~/.dotfiles"
+alias exocortex="cd ~/Documents/Vaults/exocortex"
 alias repositories="cd ~/Developer/Repositories"
+alias skills="cd ~/.agents/skills"
 alias vaults="cd ~/Documents/Vaults"
