@@ -1,19 +1,21 @@
+# Complete ~/.config/herdr/config.toml.
+# Herdr alone owns Cmd-X; applications keep their native local keymaps.
+
 onboarding = false
 
 [theme]
 name = "catppuccin"
 auto_switch = false
-
 [keys]
-prefix = "ctrl+a"
+prefix = "cmd+x"
 
+help = "prefix+?"
 settings = "prefix+s"
 workspace_picker = "prefix+w"
 goto = "prefix+g"
 
 navigate_workspace_down = "j"
 navigate_workspace_up = "k"
-
 next_workspace = "prefix+shift+n"
 previous_workspace = "prefix+shift+p"
 
@@ -21,42 +23,38 @@ navigate_pane_left = ""
 navigate_pane_down = ""
 navigate_pane_up = ""
 navigate_pane_right = ""
-
-focus_pane_left = "ctrl+h"
-focus_pane_down = "ctrl+j"
-focus_pane_up = "ctrl+k"
-focus_pane_right = "ctrl+l"
+focus_pane_left = "prefix+left"
+focus_pane_down = "prefix+down"
+focus_pane_up = "prefix+up"
+focus_pane_right = "prefix+right"
 
 split_vertical = "prefix+v"
 split_horizontal = "prefix+h"
-
 close_pane = "prefix+x"
-close_tab = "prefix+shift+x"
-close_workspace = "prefix+ctrl+shift+x"
-
-rename_pane = "prefix+r"
-rename_tab = "prefix+shift+r"
-rename_workspace = "prefix+ctrl+shift+r"
+zoom = "prefix+enter"
+resize_mode = "prefix+z"
+copy_mode = "prefix+y"
 
 new_tab = "prefix+c"
 next_tab = "prefix+n"
 previous_tab = "prefix+p"
+close_tab = "prefix+shift+x"
+rename_pane = "prefix+r"
+rename_tab = "prefix+shift+r"
 
 new_workspace = "prefix+shift+c"
+close_workspace = "prefix+ctrl+shift+x"
+rename_workspace = "prefix+ctrl+shift+r"
 
 detach = "prefix+d"
-zoom = "prefix+enter"
-copy_mode = "prefix+y"
-resize_mode = "prefix+z"
 reload_config = "prefix+ctrl+r"
-
-
-[ui.toast]
-delivery = "herdr"
 
 [ui]
 mouse_capture = true
 show_agent_labels_on_pane_borders = true
+
+[ui.toast]
+delivery = "herdr"
 
 [ui.sound]
 enabled = true

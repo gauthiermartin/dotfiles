@@ -11,12 +11,16 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 | ---------- | ------------------------------------------- |
 | `atuin`    | `~/.config/atuin/config.toml`                |
 | `eza`      | `~/.config/eza/theme.yml`                    |
+| `gh-dash`  | `~/.config/gh-dash/config.yml`               |
 | `ghostty`  | `~/.config/ghostty/config` (+ themes)        |
 | `git`      | `~/.gitconfig`                               |
 | `herdr`    | `~/.config/herdr/config.toml`                |
 | `hunk`     | `~/.config/hunk/config.toml`                 |
+| `lazygit`  | `~/Library/Application Support/lazygit/config.yml` |
 | `nvim`     | `~/.config/nvim` (LazyVim-based config)      |
+| `omp`      | `~/.omp/agent/{config,keybindings}.yml`       |
 | `starship` | `~/.config/starship.toml`                    |
+| `tuicr`    | `~/.config/tuicr/config.toml`                 |
 | `zsh`      | `~/.zshrc`, `~/.zsh_aliases`                 |
 
 ## Requirements
