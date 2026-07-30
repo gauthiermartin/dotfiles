@@ -6,7 +6,7 @@ statusLine:
   preset: nerd
   separator: none
   transparent: true
-modelRoles:
+modelRoles: 
   default: "@large"
   small: openai-codex/gpt-5.6-sol:medium
   medium: openai-codex/gpt-5.6-sol:high
@@ -17,21 +17,21 @@ defaultThinkingLevel: auto
 hideThinkingBlock: false
 proseOnlyThinking: true
 omitThinking: false
-retry:
+retry: 
   maxRetries: 3
   modelFallback: true
-  fallbackChains:
-    default:
+  fallbackChains: 
+    default: 
       - openai-codex/gpt-5.6-sol:xhigh
-    small:
+    small: 
       - anthropic/claude-opus-5:low
-    medium:
+    medium: 
       - anthropic/claude-opus-5:medium
-    large:
+    large: 
       - openai-codex/gpt-5.6-sol:xhigh
-    xlarge:
+    xlarge: 
       - openai-codex/gpt-5.6-sol:max
-    budget:
+    budget: 
       - anthropic/claude-opus-5:low
 advisor: 
   enabled: true
@@ -50,9 +50,7 @@ checkpoint:
 task: 
   agentModelOverrides: 
     {}
-dev: 
-  autoqaConsent: granted
-cycleOrder:
+cycleOrder: 
   - budget
   - small
   - medium
