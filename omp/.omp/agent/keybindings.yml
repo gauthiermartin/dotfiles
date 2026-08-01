@@ -1,5 +1,2 @@
-# OMP has no leader; these direct bindings apply only while OMP is focused.
-app.history.search: ctrl+r
-app.interrupt: escape
-app.clear: ctrl+c
-app.exit: ctrl+d
+# Empty override: use OMP's upstream direct keybindings.
+{}

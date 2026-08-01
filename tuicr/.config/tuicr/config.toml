@@ -4,10 +4,6 @@ ignore_whitespace = false
 show_file_list = true
 show_commits = true
 mouse = true
-
-# tuicr's local leader applies only while its Herdr pane is focused.
-leader = ";"
-
 comment_vim = true
 comment_tab_width = 4
 wrap = false
