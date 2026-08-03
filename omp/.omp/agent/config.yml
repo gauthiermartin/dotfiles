@@ -1,68 +1,60 @@
 symbolPreset: nerd
 setupVersion: 1
-
-theme:
+theme: 
   dark: dark-catppuccin
-
-statusLine:
+statusLine: 
   preset: nerd
   separator: none
   transparent: true
-
-modelRoles:
+modelRoles: 
   default: "@large"
   small: openai-codex/gpt-5.6-sol:medium
   medium: openai-codex/gpt-5.6-sol:high
   large: anthropic/claude-opus-5:high
   xlarge: anthropic/claude-opus-5:max
   budget: openai-codex/gpt-5.6-luna:xhigh
-
 defaultThinkingLevel: auto
 hideThinkingBlock: false
 proseOnlyThinking: true
 omitThinking: false
-
-retry:
+retry: 
   maxRetries: 3
   modelFallback: true
-  fallbackChains:
-    default:
+  fallbackChains: 
+    default: 
       - openai-codex/gpt-5.6-sol:xhigh
-    small:
+    small: 
       - anthropic/claude-opus-5:low
-    medium:
+    medium: 
       - anthropic/claude-opus-5:medium
-    large:
+    large: 
       - openai-codex/gpt-5.6-sol:xhigh
-    xlarge:
+    xlarge: 
       - openai-codex/gpt-5.6-sol:max
-    budget:
+    budget: 
       - anthropic/claude-opus-5:low
-
-advisor:
+advisor: 
   enabled: true
-
-tools:
+tools: 
   approvalMode: yolo
-
-stt:
+stt: 
   enabled: false
-
 readLineNumbers: true
-lsp:
+lsp: 
   formatOnWrite: true
   diagnosticsOnEdit: true
-
-vault:
+vault: 
   enabled: false
-checkpoint:
+checkpoint: 
   enabled: true
-task:
-  agentModelOverrides: {}
-
-cycleOrder:
+task: 
+  agentModelOverrides: 
+    {}
+cycleOrder: 
   - budget
   - small
   - medium
   - default
   - xlarge
+dev: 
+  autoqaConsent: granted
