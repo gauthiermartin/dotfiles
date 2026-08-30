@@ -9,16 +9,17 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 
 | Package    | Manages                                    |
 | ---------- | ------------------------------------------- |
+| `aerospace` | `~/.aerospace.toml`                         |
 | `atuin`    | `~/.config/atuin/config.toml`                |
 | `eza`      | `~/.config/eza/theme.yml`                    |
 | `gh-dash`  | `~/.config/gh-dash/config.yml`               |
 | `ghostty`  | `~/.config/ghostty/config` (+ themes)        |
 | `git`      | `~/.gitconfig`                               |
 | `herdr`    | `~/.config/herdr/config.toml`                |
-| `hunk`     | `~/.config/hunk/config.toml`                 |
 | `lazygit`  | `~/Library/Application Support/lazygit/config.yml` |
 | `nvim`     | `~/.config/nvim` (LazyVim-based config)      |
 | `omp`      | `~/.omp/agent/{config,keybindings}.yml`       |
+| `sketchybar` | `~/.config/sketchybar`                     |
 | `starship` | `~/.config/starship.toml`                    |
 | `tuicr`    | `~/.config/tuicr/config.toml`                 |
 | `zsh`      | `~/.zshrc`, `~/.zsh_aliases`                 |
@@ -30,7 +31,7 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 A repo-local `.stowrc` sets `--no-folding` as the default for every `stow`
 invocation run from this directory. Without it, stow "folds" a package
 directory into a single symlink when it only contains stowed files (e.g.
-`~/.config/hunk` → the repo directly), so any runtime file an app later
+`~/.config/atuin` → the repo directly), so any runtime file an app later
 writes there (caches, state, history) ends up physically inside the repo.
 `--no-folding` keeps target directories real and only symlinks the
 individual tracked files, so runtime files stay local to `$HOME`.
