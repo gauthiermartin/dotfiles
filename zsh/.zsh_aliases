@@ -5,11 +5,14 @@
 alias ".."="cd .."
 alias re-source="source ~/.zshrc"
 
-alias ls="eza -la"
-alias ll="eza -laGT"
+alias ls="eza --long --all --icons=always"
+alias lsd="eza --long --all --icons=always --group-directories-first"
 
 alias dotfiles="cd ~/.dotfiles"
-alias exocortex="cd ~/Documents/Vaults/exocortex"
 alias repositories="cd ~/Developer/Repositories"
+
 alias skills="cd ~/.agents/skills"
+
 alias vaults="cd ~/Documents/Vaults"
+alias exocortex='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Exocortex'
+

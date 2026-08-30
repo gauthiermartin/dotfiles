@@ -1,18 +1,11 @@
 symbolPreset: nerd
-setupVersion: 1
+setupVersion: 2
 theme: 
   dark: dark-catppuccin
 statusLine: 
   preset: nerd
   separator: none
   transparent: true
-modelRoles: 
-  default: "@large"
-  small: openai-codex/gpt-5.6-sol:medium
-  medium: openai-codex/gpt-5.6-sol:high
-  large: anthropic/claude-opus-5:high
-  xlarge: anthropic/claude-opus-5:max
-  budget: openai-codex/gpt-5.6-luna:xhigh
 defaultThinkingLevel: auto
 hideThinkingBlock: false
 proseOnlyThinking: true
@@ -20,19 +13,6 @@ omitThinking: false
 retry: 
   maxRetries: 3
   modelFallback: true
-  fallbackChains: 
-    default: 
-      - openai-codex/gpt-5.6-sol:xhigh
-    small: 
-      - anthropic/claude-opus-5:low
-    medium: 
-      - anthropic/claude-opus-5:medium
-    large: 
-      - openai-codex/gpt-5.6-sol:xhigh
-    xlarge: 
-      - openai-codex/gpt-5.6-sol:max
-    budget: 
-      - anthropic/claude-opus-5:low
 advisor: 
   enabled: true
 tools: 
@@ -50,11 +30,16 @@ checkpoint:
 task: 
   agentModelOverrides: 
     {}
-cycleOrder: 
-  - budget
-  - small
-  - medium
-  - default
-  - xlarge
 dev: 
   autoqaConsent: granted
+composer: 
+  shape: claude
+memory: 
+  backend: "off"
+github: 
+  enabled: false
+plan: 
+  enabled: true
+goal: 
+  enabled: true
+  statusInFooter: true

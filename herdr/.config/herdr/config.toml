@@ -1,8 +1,8 @@
 # ~/.config/herdr/config.toml
 #
-# Keybindings are stock herdr defaults — there is deliberately no [keys]
-# section. prefix = ctrl+b; LazyVim's leader stays <space>. Press prefix+?
-# for the live keymap, or `herdr --default-config` for every setting.
+# Keybindings mostly use stock herdr defaults. prefix = ctrl+b;
+# LazyVim's leader stays <space>. Press prefix+? for the live keymap,
+# or `herdr --default-config` for every setting.
 #
 # Note: `copy_mode` exists as an action but ships unbound in 0.7.1.
 # To enable tmux-style copy mode, add:
@@ -15,6 +15,10 @@ onboarding = false
 name = "catppuccin"
 auto_switch = false
 
+
+[keys]
+previous_workspace = "prefix+shift+k"
+next_workspace = "prefix+shift+j"
 [ui]
 mouse_capture = true
 show_agent_labels_on_pane_borders = true

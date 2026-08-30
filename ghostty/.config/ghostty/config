@@ -2,3 +2,4 @@ theme = Catppuccin Mocha
 font-size = 16
 background-opacity = 0.85
 background-blur = 10
+copy-on-select = clipboard
