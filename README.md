@@ -9,7 +9,7 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 
 | Package    | Manages                                    |
 | ---------- | ------------------------------------------- |
-| `aerospace` | `~/.aerospace.toml`                         |
+| `aerospace` | `~/.config/aerospace/aerospace.toml`         |
 | `atuin`    | `~/.config/atuin/config.toml`                |
 | `eza`      | `~/.config/eza/theme.yml`                    |
 | `gh-dash`  | `~/.config/gh-dash/config.yml`               |

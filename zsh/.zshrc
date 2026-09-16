@@ -116,3 +116,14 @@ else
     echo "Aliases file ${ZSH_ALIASES} not found ... skipping loading"
 fi
 
+# =============================================================================
+# Functions
+# =============================================================================
+ZSH_FUNCTIONS="${HOME}/.zsh_functions"
+
+if [ -f ${ZSH_FUNCTIONS} ]; then
+    source ${ZSH_FUNCTIONS}
+else
+    echo "Functions file ${ZSH_FUNCTIONS} not found ... skipping loading"
+fi
+

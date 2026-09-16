@@ -1,45 +1,79 @@
 symbolPreset: nerd
 setupVersion: 2
-theme: 
+theme:
   dark: dark-catppuccin
-statusLine: 
+statusLine:
   preset: nerd
   separator: none
   transparent: true
+  contextLine: percentage
 defaultThinkingLevel: auto
 hideThinkingBlock: false
 proseOnlyThinking: true
 omitThinking: false
-retry: 
+retry:
   maxRetries: 3
   modelFallback: true
-advisor: 
+advisor:
   enabled: true
-tools: 
+tools:
   approvalMode: yolo
-stt: 
+stt:
   enabled: false
 readLineNumbers: true
-lsp: 
+lsp:
   formatOnWrite: true
   diagnosticsOnEdit: true
-vault: 
-  enabled: false
-checkpoint: 
   enabled: true
-task: 
-  agentModelOverrides: 
+vault:
+  enabled: false
+checkpoint:
+  enabled: true
+task:
+  agentModelOverrides:
     {}
-dev: 
+dev:
   autoqaConsent: granted
-composer: 
+composer:
   shape: claude
-memory: 
+memory:
   backend: "off"
-github: 
+github:
   enabled: false
-plan: 
+plan:
   enabled: true
-goal: 
+goal:
   enabled: true
   statusInFooter: true
+browser:
+  relay: true
+tui:
+  resizeScrollback: preserve
+  vimMode: false
+  vimModeDisplay: text
+terminal:
+  showProgress: false
+display:
+  showTokenUsage: false
+followUpMode: one-at-a-time
+spelling:
+  autocorrect: true
+error:
+  notify: "on"
+marketplace:
+  autoUpdate: notify
+startup:
+  changelogMode: summary
+compaction:
+  experimentalContextManagement: false
+  idleThresholdTokens: 100000
+  thresholdTokens: 150000
+autolearn:
+  enabled: false
+  autoContinue: false
+edit:
+  mode: replace
+astGrep:
+  enabled: true
+todo:
+  remindersMax: 5
