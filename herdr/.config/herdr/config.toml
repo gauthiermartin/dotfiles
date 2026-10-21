@@ -21,3 +21,5 @@ next_workspace = "prefix+shift+j"
 [ui.toast]
 delivery = "herdr"
 
+[ui]
+status_indicators = "symbols"

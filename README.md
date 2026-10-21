@@ -22,6 +22,7 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 | `sketchybar` | `~/.config/sketchybar`                     |
 | `starship` | `~/.config/starship.toml`                    |
 | `tuicr`    | `~/.config/tuicr/config.toml`                 |
+| `worktrunk` | `~/.config/worktrunk/config.toml`             |
 | `zsh`      | `~/.zshrc`, `~/.zsh_aliases`                 |
 
 ## Requirements

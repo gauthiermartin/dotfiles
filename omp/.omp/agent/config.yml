@@ -30,12 +30,12 @@ vault:
 checkpoint:
   enabled: true
 task:
-  agentModelOverrides:
-    {}
+  agentModelOverrides: {}
 dev:
   autoqaConsent: granted
 composer:
   shape: claude
+  tokenRate: true
 memory:
   backend: "off"
 github:
@@ -57,7 +57,7 @@ display:
   showTokenUsage: false
 followUpMode: one-at-a-time
 spelling:
-  autocorrect: true
+  autocorrect: false
 error:
   notify: "on"
 marketplace:
