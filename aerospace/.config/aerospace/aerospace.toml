@@ -57,6 +57,7 @@ automatically-unhide-macos-hidden-apps = false
 
 on-window-detected = [
   { if = 'test %{app-bundle-id} = com.apple.finder', run = 'layout floating' },
+  { if = 'test %{app-bundle-id} = com.dygmalab.bazecor', run = 'layout floating' },
   { if = 'test %{app-bundle-id} = com.hnc.Discord', run = 'layout floating' },
 ]
 
@@ -155,19 +156,21 @@ alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
 alt-b = 'workspace B'
-alt-c = 'workspace C'
+alt-c = "exec-and-forget open -a 'Google Chrome'"
 alt-d = 'workspace D'
 alt-e = 'workspace E'
 alt-f = 'workspace F'
-alt-g = 'workspace G'
+alt-g = 'exec-and-forget open -a /Applications/Ghostty.app'
 alt-i = 'workspace I'
 alt-m = 'workspace M'
 alt-n = 'workspace N'
-alt-o = 'workspace O'
+# About Custom Application Launch command:
+# exec-and-forget runs this through /bin/bash in the background; output/status are ignored.
+alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
 alt-p = 'workspace P'
 alt-q = 'workspace Q'
 alt-r = 'workspace R'
-alt-s = 'workspace S'
+alt-s = 'exec-and-forget open -a /Applications/Spotify.app'
 alt-t = 'workspace T'
 alt-u = 'workspace U'
 alt-v = 'workspace V'

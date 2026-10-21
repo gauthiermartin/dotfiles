@@ -2,7 +2,7 @@
 # Aliases
 # ============================================================================
 
-alias re-source="source ~/.zshrc"
+alias resource="source ~/.zshrc"
 
 ## Folder Aliases
 alias dotfiles="cd ~/.dotfiles"
@@ -19,9 +19,12 @@ alias ......="cd ../../../../.."
 
 
 ## General Application
+alias buu="brew update && brew upgrade"
+
 alias v="nvim"
 alias vim="nvim"
 alias cat="bat"
+alias o="omp"
 
 ## Eza
 alias ls="eza --long --all --icons=always"

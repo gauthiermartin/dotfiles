@@ -77,3 +77,10 @@ astGrep:
   enabled: true
 todo:
   remindersMax: 5
+commands:
+  enableClaudeUser: true
+  enableOpencodeUser: true
+skills:
+  enableClaudeUser: true
+codexResets:
+  autoRedeem: "yes"

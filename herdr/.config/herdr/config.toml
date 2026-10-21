@@ -13,18 +13,11 @@ onboarding = false
 
 [theme]
 name = "catppuccin"
-auto_switch = false
-
 
 [keys]
 previous_workspace = "prefix+shift+k"
 next_workspace = "prefix+shift+j"
-[ui]
-mouse_capture = true
-show_agent_labels_on_pane_borders = true
 
 [ui.toast]
 delivery = "herdr"
 
-[ui.sound]
-enabled = true
