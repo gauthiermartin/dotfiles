@@ -1,3 +1,6 @@
 .DS_Store
 omp/.omp/agent/config.yml.bak
 omp/.omp/agent/config.yml.lock
+
+dygma/Documents/Dygma/Backups/Defy/**/*.json
+!dygma/Documents/Dygma/Backups/Defy/8304e13def7fc5e/20261021222554-Martins Defy.json
