@@ -1,13 +1,16 @@
 symbolPreset: nerd
-setupVersion: 2
+setupVersion: 3
 theme:
-  dark: dark-catppuccin
+  dark: titanium
 statusLine:
-  preset: nerd
-  separator: none
+  preset: custom
+  separator: powerline
   transparent: true
   contextLine: percentage
-defaultThinkingLevel: auto
+  sessionAccent: true
+  compactThinkingLevel: true
+  showHookStatus: true
+defaultThinkingLevel: high
 hideThinkingBlock: false
 proseOnlyThinking: true
 omitThinking: false
@@ -34,7 +37,7 @@ task:
 dev:
   autoqaConsent: granted
 composer:
-  shape: claude
+  shape: band
   tokenRate: true
 memory:
   backend: "off"
@@ -48,13 +51,19 @@ goal:
 browser:
   relay: true
 tui:
-  resizeScrollback: preserve
+  resizeScrollback: rebuild
   vimMode: false
   vimModeDisplay: text
+  completeScrollback: true
+  tight: false
 terminal:
   showProgress: false
 display:
-  showTokenUsage: false
+  showTokenUsage: true
+  pinnedAgents: collapsed
+  subagentLivePreview: false
+  showTurnTime: true
+  cacheMissMarker: true
 followUpMode: one-at-a-time
 spelling:
   autocorrect: false
@@ -83,4 +92,7 @@ commands:
 skills:
   enableClaudeUser: true
 codexResets:
-  autoRedeem: "yes"
+  autoRedeem5h: "yes"
+  autoRedeemWeekly: "yes"
+update:
+  auto: true

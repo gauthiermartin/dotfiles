@@ -1,0 +1,2 @@
+# Delete all .DS_Store files under the current directory, recursively.
+find . -name .DS_Store -type f -print -delete

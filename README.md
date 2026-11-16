@@ -16,6 +16,7 @@ Each top-level directory is a stow package whose contents mirror `$HOME`. Runnin
 | `ghostty`  | `~/.config/ghostty/config` (+ themes)        |
 | `git`      | `~/.gitconfig`                               |
 | `herdr`    | `~/.config/herdr/config.toml`                |
+| `herdr-app` | `~/.config/herdr-app/{settings,keys}.json`, `themes/catppuccin.json`, `mods/wt-*` |
 | `lazygit`  | `~/Library/Application Support/lazygit/config.yml` |
 | `nvim`     | `~/.config/nvim` (LazyVim-based config)      |
 | `omp`      | `~/.omp/agent/{config,keybindings}.yml`       |

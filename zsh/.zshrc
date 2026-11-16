@@ -41,6 +41,9 @@ setopt INC_APPEND_HISTORY
 # Completion
 # =============================================================================
 
+# One function per file; must be on fpath before compinit
+fpath=($HOME/.zsh/functions $fpath)
+
 autoload -Uz compinit
 # Cache compinit — only regenerate once per day
 if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
@@ -76,6 +79,9 @@ elif [[ -f /usr/local/bin/brew ]]; then
 elif [[ -f /home/linuxbrew/.linuxbrew/bin/brew ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
+
+# Docker Desktop CLI tools
+path+=($HOME/.docker/bin)
 
 # =============================================================================
 # Environment
@@ -117,15 +123,9 @@ else
 fi
 
 # =============================================================================
-# Functions
+# Functions (one per file in ~/.zsh/functions, autoloaded on first call)
 # =============================================================================
-ZSH_FUNCTIONS="${HOME}/.zsh_functions"
-
-if [ -f ${ZSH_FUNCTIONS} ]; then
-    source ${ZSH_FUNCTIONS}
-else
-    echo "Functions file ${ZSH_FUNCTIONS} not found ... skipping loading"
-fi
+autoload -Uz $HOME/.zsh/functions/*(N:t)
 
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi

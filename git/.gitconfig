@@ -25,3 +25,5 @@
   name = Martin Gauthier
   email = gauthiermartin86@gmail.com
 	signingkey = 9B605281421F58FF
+[pull]
+	rebase = true

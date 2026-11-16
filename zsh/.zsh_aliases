@@ -9,13 +9,11 @@ alias dotfiles="cd ~/.dotfiles"
 alias repositories="cd ~/Developer/Repositories"
 alias skills="cd ~/.agents/skills"
 alias vault='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Exocortex'
+alias home="cd ~"
 
 ## Parent Dirs
 alias ..="cd .."
 alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ......="cd ../../../../.."
 
 
 ## General Application
